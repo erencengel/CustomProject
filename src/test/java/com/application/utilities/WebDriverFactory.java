@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.util.Locale;
 
@@ -33,6 +34,10 @@ public class WebDriverFactory {
             case "chrome-headless":
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                return driver;
+            case "firefox-headless":
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver(new FirefoxOptions().setHeadless(true));
                 return driver;
             default:
                 driver = null;
