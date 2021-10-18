@@ -18,7 +18,7 @@ public class Waits {
 
     @BeforeTest
     public void setUp(){
-        driver = WebDriverFactory.getDriver("chrome");
+        driver = WebDriverFactory.getDriver("chrome-headless");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }

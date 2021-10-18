@@ -27,7 +27,7 @@ public class CheckBoxDemo {
         Assert.assertTrue(!element1.isSelected(),"verify that box1 is not selected");
         Assert.assertTrue(element2.isSelected(),"verify that box2 is selected");
         element1.click();
-        //driver.quit();
+        driver.quit();
     }
 
     @Test

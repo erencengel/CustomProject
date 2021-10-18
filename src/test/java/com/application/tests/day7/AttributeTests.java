@@ -1,6 +1,7 @@
 package com.application.tests.day7;
 
 import com.application.utilities.WebDriverFactory;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,6 +33,17 @@ public class AttributeTests {
         System.out.println("element3.getAttribute(\"innerHTML\") = " + element3.getAttribute("innerHTML"));
         driver.quit();
 
+    }
+
+    @Test
+    public void test2(){
+        System.out.println(new Faker().name().title());
+        System.out.println(new Faker().name().title());
+        System.out.println(new Faker().name().title());
+        System.out.println("new Faker().commerce().department() = " + new Faker().commerce().department());
+        System.out.println("new Faker().commerce().department() = " + new Faker().commerce().department());
+        System.out.println("new Faker().company().name() = " + new Faker().company().name());
+        System.out.println("new Faker().company().name() = " + new Faker().company().name());
     }
 
 }
