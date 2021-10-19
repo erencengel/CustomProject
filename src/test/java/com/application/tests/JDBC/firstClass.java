@@ -24,6 +24,11 @@ public class firstClass {
         String first_nameAsString = resultSet.getString(1);
         System.out.println(first_name);
 
+        resultSet.close();
+        statement.close();
+        connection.close();
+
+
 
     }
 
